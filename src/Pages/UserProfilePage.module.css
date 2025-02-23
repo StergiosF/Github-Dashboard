@@ -1,0 +1,21 @@
+.userProfilePage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem;
+}
+
+@media (max-width: 768px) {
+  .userProfilePage {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .userProfilePage {
+    padding: 2rem 1rem;
+  }
+}

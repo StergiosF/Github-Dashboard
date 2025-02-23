@@ -1,0 +1,45 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+:root {
+  --color-brand--1: #499eff;
+
+  --color-error: #e63946;
+  --color-warning: #ffb400;
+  --color-info: #3d79d4;
+
+  --color-input: #0e1116;
+  --color-box: #15181f;
+  --color-box--dark: #13151b;
+  --color-suggestions: #1d222b;
+
+  --color-dark--0: #161b22; /* Main Dark Background */
+  --color-dark--1: #1f242c; /* Card Background */
+  --color-dark--2: #30363d; /* Borders/Dividers */
+
+  --color-light--1: #e6edf3; /* Primary Text (Headings, Usernames) */
+  --color-light--2: #8b949e; /* Secondary Text (Bio, descriptions) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  background-color: var(--color-dark--0);
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: "Twemoji Country Flags", "Manrope", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

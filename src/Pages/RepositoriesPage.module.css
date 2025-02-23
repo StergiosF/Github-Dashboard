@@ -1,0 +1,56 @@
+.repositoriesPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 6rem;
+}
+
+.searchContainer {
+  width: 100%;
+  max-width: 104rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backIcon {
+  font-size: 4rem;
+  color: var(--color-light--2);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  left: 0;
+}
+
+.backIcon:hover {
+  color: var(--color-light--1);
+}
+
+.toggleIcon {
+  font-size: 4rem;
+  color: var(--color-light--2);
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  right: 0;
+}
+
+.toggleIcon:hover {
+  color: var(--color-light--1);
+}
+
+@media (max-width: 768px) {
+  .repositoriesPage {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .repositoriesPage {
+    padding: 2rem 1rem;
+  }
+}

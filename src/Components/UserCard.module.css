@@ -1,0 +1,188 @@
+.userCard {
+  background-color: var(--color-dark--1);
+  height: 46rem;
+  width: 100%;
+  max-width: 84rem;
+  border-radius: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  display: flex;
+  gap: 6.8rem;
+  padding: 4rem;
+}
+
+.leftContainer {
+  width: 30%;
+}
+
+.userCard .notAvailable {
+  color: var(--color-light--2);
+}
+
+.userAvatar {
+  height: 18rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  border: 1px solid var(--color-dark--0);
+}
+
+.userDescription {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: var(--color-light--1);
+}
+
+.rightContainer {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.smallDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullName {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: var(--color-light--1);
+}
+
+.username {
+  font-size: 1.4rem;
+  color: var(--color-brand--1);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.username:hover {
+  border-bottom: 1px solid var(--color-brand--1);
+}
+
+.joinDate {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.details {
+  background-color: var(--color-dark--0);
+  margin-top: 4.2rem;
+  border-radius: 0.6rem;
+  height: 10.6rem;
+  padding: 4rem 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-light--1);
+  font-weight: 600;
+}
+
+.typeName {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.btn {
+  margin-top: 0.4rem;
+  padding-left: 1rem;
+  color: var(--color-info);
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: var(--color-brand--1);
+}
+
+.secondaryDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+
+  margin-top: 4.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-light--1);
+}
+
+.secondaryDetails a,
+.secondaryDetails span {
+  color: var(--color-light--1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.secondaryDetails .notAvailable {
+  color: var(--color-light--2);
+}
+
+@media (max-width: 768px) {
+  .userCard {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .leftContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .userAvatar {
+    height: 14rem;
+    margin-bottom: 1rem;
+  }
+
+  .details {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .secondaryDetails {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .userCard {
+    padding: 1.5rem;
+  }
+
+  .fullName {
+    font-size: 2rem;
+  }
+
+  .username {
+    font-size: 1.2rem;
+  }
+
+  .detailItem {
+    min-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .secondaryDetails {
+    font-size: 1.2rem;
+  }
+}

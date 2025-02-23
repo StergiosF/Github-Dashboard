@@ -1,0 +1,23 @@
+.homepage {
+  height: 100vh;
+  padding: 16rem 6rem 6rem 6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.homepage .title {
+  font-size: 5.8rem;
+  word-spacing: 1.2rem;
+}
+
+.homepage .githubLogo {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  max-height: 5.8rem;
+}
