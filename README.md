@@ -8,7 +8,7 @@ Deployed Website: https://github-dashboard-stergios.netlify.app
 
 ## About The Project
 
-[![Dashboard Preview](previews/dashboard_preview.png)](https://github-dashboard-stergios.netlify.app/)
+[![Dashboard Preview](public/homepage_preview.png)](https://github-dashboard-stergios.netlify.app/)
 
 GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics and activity. Features include:
 
@@ -26,7 +26,6 @@ GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics
 - [React Router](https://reactrouter.com/)
 - [GitHub REST API](https://docs.github.com/en/rest)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## Getting Started
 
@@ -39,5 +38,26 @@ GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics
 ### Installation
 
 1. Clone the repo:
+
    ```bash
-   git clone https://github.com/your-username/github-dashboard
+   git clone https://github.com/StergiosF/Github-Dashboard
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd github-dashboard
+   ```
+
+3. Install NPM packages:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+"
