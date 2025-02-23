@@ -1,4 +1,4 @@
-# 🌟 GitHub Dashboard
+# 🖥️ GitHub Dashboard
 
 A React-based dashboard to explore GitHub user profiles, repositories, and followers using the GitHub API.
 
@@ -8,7 +8,7 @@ Deployed Website: https://github-dashboard-stergios.netlify.app
 
 ## About The Project
 
-[![Dashboard Preview](public/homepage_preview.png)](https://github-dashboard-stergios.netlify.app/)
+[![Dashboard Preview](public/dashboard_preview.png)](https://github-dashboard-stergios.netlify.app/)
 
 GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics and activity. Features include:
 
@@ -28,6 +28,8 @@ GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics
 - [React Icons](https://react-icons.github.io/react-icons/)
 
 ## Getting Started
+
+To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
@@ -55,9 +57,14 @@ GitHub Dashboard is a comprehensive interface for viewing GitHub user statistics
    npm install
    ```
 
-4. Start the development server:
+4. Create .env file:
+
+   ```bash
+   VITE_GITHUB_TOKEN = your_personal_access_token
+   ```
+
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
-"
