@@ -4,6 +4,7 @@ const headers = {
   Accept: "application/vnd.github+json",
   "User-Agent": "GitHub-Dashboard",
   Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+  "X-GitHub-Api-Version": "2022-11-28",
 };
 
 async function fetchUser(username) {
