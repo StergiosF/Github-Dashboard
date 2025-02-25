@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useUser } from "../Context/UserContext";
+import useScreenSize from "../Hooks/useScreenSize";
 import styles from "./RepoCard.module.css";
 import { FaStar } from "react-icons/fa6";
 import Pagination from "../Utils/Pagination";
 
 function RepoCard() {
   const { user, repos } = useUser();
+  const { isMobile, isTablet } = useScreenSize();
 
   // Track sort values for stars and date
   const [sortStars, setSortStars] = useState("most");
@@ -14,8 +16,8 @@ function RepoCard() {
   // Track current page
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Items (repos) per page
-  const reposPerPage = 9;
+  // Responsive followers per page
+  const reposPerPage = isMobile ? 4 : isTablet ? 6 : 9;
 
   // Sort the repos based on the selected filters
   const sortedRepos = repos.slice().sort((a, b) => {

@@ -42,3 +42,15 @@
 .toggleIcon:hover {
   color: var(--color-light--1);
 }
+
+@media (max-width: 768px) {
+  .followingPage {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .followingPage {
+    padding: 4rem;
+  }
+}

@@ -45,12 +45,12 @@
 
 @media (max-width: 768px) {
   .repositoriesPage {
-    padding: 3rem 1.5rem;
+    padding: 4rem;
   }
 }
 
 @media (max-width: 480px) {
   .repositoriesPage {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 }

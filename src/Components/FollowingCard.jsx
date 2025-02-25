@@ -1,17 +1,19 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useUser } from "../Context/UserContext";
+import useScreenSize from "../Hooks/useScreenSize";
 import styles from "./FollowingCard.module.css";
 import Pagination from "../Utils/Pagination";
 
 function FollowingCard() {
   const { user, following } = useUser();
+  const { isMobile, isTablet } = useScreenSize();
 
   // Track current page
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Items (following) per page
-  const followingPerPage = 9;
+  // Responsive followers per page
+  const followingPerPage = isMobile ? 4 : isTablet ? 6 : 9;
 
   // Calculate total pages based on sorted Following
   const totalPages = Math.ceil(following.length / followingPerPage);
