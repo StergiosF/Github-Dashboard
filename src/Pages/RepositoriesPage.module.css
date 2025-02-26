@@ -43,9 +43,27 @@
   color: var(--color-light--1);
 }
 
+@media (max-width: 1024px) {
+  .searchContainer {
+    max-width: 72rem;
+  }
+
+  .backIcon {
+    left: -6rem;
+  }
+
+  .toggleIcon {
+    right: -6rem;
+  }
+}
+
 @media (max-width: 768px) {
   .repositoriesPage {
     padding: 4rem;
+  }
+
+  .searchContainer {
+    max-width: 42rem;
   }
 }
 

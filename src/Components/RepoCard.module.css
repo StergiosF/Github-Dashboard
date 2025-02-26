@@ -192,6 +192,10 @@
 }
 
 @media (max-width: 768px) {
+  .repoCard {
+    min-height: 68rem;
+  }
+
   .topContainer {
     flex-direction: column;
     gap: 2rem;
@@ -212,17 +216,26 @@
   .userAvatar {
     height: 10rem;
   }
+
+  .repoDesc {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
   .repoCard {
     padding: 1rem;
+    min-height: 68rem;
   }
 
   .repoItem {
     height: 8rem;
     padding: 1rem;
     gap: 1rem;
+  }
+
+  .repoDesc {
+    display: none;
   }
 
   .userAvatarMini {
@@ -239,5 +252,10 @@
 
   .repoBtn {
     padding: 0.8rem 1.5rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 0.6rem;
   }
 }
